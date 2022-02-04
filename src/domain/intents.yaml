@@ -1,0 +1,16 @@
+version: "3.0"
+
+intents:
+  - greet:
+      use_entities: []
+  - goodbye:
+      use_entities: []
+  - thank:
+      use_entities: []
+  - affirm:
+      use_entities: []
+  - deny:
+      use_entities: []
+  - bot_challenge:
+      use_entities: []
+  - productivity_unit

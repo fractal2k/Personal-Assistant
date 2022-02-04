@@ -1,0 +1,9 @@
+docker*
+.git*
+__pycache__
+!docker/configs
+.rasa
+src/tests
+src/scripts
+data/
+examples/

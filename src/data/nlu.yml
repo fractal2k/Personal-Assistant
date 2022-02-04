@@ -1,0 +1,86 @@
+version: "3.0"
+nlu:
+- intent: greet
+  examples: |
+    - hey
+    - hello
+    - hi
+    - hello there
+    - good morning
+    - good evening
+    - moin
+    - hey there
+    - let's go
+    - hey dude
+    - goodmorning
+    - goodevening
+    - good afternoon
+- intent: goodbye
+  examples: |
+    - cu
+    - good by
+    - cee you later
+    - good night
+    - bye
+    - goodbye
+    - have a nice day
+    - see you around
+    - bye bye
+    - see you later
+- intent: thank
+  examples: |
+    - thank you
+    - thanks
+    - thanks a lot
+    - thanks for your help
+    - thank you so much
+    - thank you for your help
+    - thanks a ton
+    - thanks a bunch
+    - thank you!
+- intent: affirm
+  examples: |
+    - yes
+    - y
+    - indeed
+    - of course
+    - that sounds good
+    - correct
+- intent: deny
+  examples: |
+    - no
+    - n
+    - never
+    - I don't think so
+    - don't like that
+    - no way
+    - not really
+- intent: bot_challenge
+  examples: |
+    - are you a bot?
+    - are you a human?
+    - am I talking to a bot?
+    - am I talking to a human?
+- intent: productivity_unit
+  examples: |
+    - bot, set a [timer](productivity_unit_type)
+    - hey, can you set a [timer](productivity_unit_type) please?
+    - make a [timer](productivity_unit_type)
+    - set [timer](productivity_unit_type)
+    - I want you to set a [timer](productivity_unit_type) for [4 minutes](timer_duration)
+    - can you set [timer](productivity_unit_type) of [2 minutes](timer_duration)?
+    - set a [timer](productivity_unit_type) of [4 hours](timer_duration)?
+    - set a [timer](productivity_unit_type) for [5 minutes](timer_duration) please
+    - set a [timer](productivity_unit_type) for [1 hour](timer_duration)
+    - can you set a [timer](productivity_unit_type) for [30 minutes](timer_duration)
+    - please set a [reminder](productivity_unit_type)
+    - set a [reminder](productivity_unit_type)
+    - can you please [remind](productivity_unit_type) me about something later?
+    - will you [remind](productivity_unit_type) me to [wash the dishes](reminder_name)?
+    - set a [reminder](productivity_unit_type) to [check email](reminder_name)
+    - set a [reminder](productivity_unit_type) on [6th december](reminder_datetime)
+    - set [reminder](productivity_unit_type) at [3pm](reminder_datetime)
+    - [remind](productivity_unit_type) me to [pick dad up from the hospital](reminder_name) at [7pm today](reminder_datetime)?
+    - can you set a [timer](productivity_unit_type) for [2 hours](timer_duration)?
+    - can you set a [timer](productivity_unit_type) please
+    - [10 minutes](timer_duration)

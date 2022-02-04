@@ -1,0 +1,53 @@
+version: "3.0"
+
+responses:
+  utter_greet:
+  - text: "Hey"
+  - text: "Hey {name}."
+  - text: "Hey {name}! What's up?"
+  - text: "Hello"
+  - text: "Hello!"
+  - text: "Hello {name}. You needed something?"
+  - text: "Hi"
+  - text: "Hi!"
+  - text: "Hi {name}. What do you need?"
+  - text: "Hi {name}. What's going on?"
+
+  utter_goodbye:
+  - text: "Bye"
+  - text: "Bye!"
+  - text: "Bye bye"
+  - text: "Bye bye!"
+  - text: "Goodbye"
+  - text: "Goodbye!"
+  - text: "See you again"
+  - text: "See you again!"
+  - text: "See you soon"
+  - text: "See you soon!"
+  - text: "Bye {name}. Hope to see you soon!"
+  - text: "Bye {name}. Let's talk again soon!"
+
+  utter_iamabot:
+  - text: "Yeah, I'm a bot. But you knew that already, didn't you?"
+  - text: "You're right, I am a bot. A bot that can help you automate the mundane things in your life, so you can focus on the important bits."
+
+  utter_noproblem:
+  - text: "No problem"
+  - text: "No problem!"
+  - text: "Glad I could help!"
+  - text: "Always a pleasure"
+  - text: "My pleasure"
+
+  utter_ask_timer_form_timer_duration:
+  - text: "Sure thing. What should be the duration of the timer?"
+  - text: "Of course. But what duration do you want the timer to be?"
+  - text: "Okay. Duration of timer?"
+  - text: "How long do you want the timer to be?"
+
+  utter_ask_reminder_form_reminder_name:
+  - text: "Okay. What do you want me to remind you about?"
+  - text: "What should I set the reminder for?"
+
+  utter_ask_reminder_form_reminder_datetime:
+  - text: "Okay. When do you want me to remind you?"
+  - text: "At what time should I remind you?"

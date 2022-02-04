@@ -1,0 +1,16 @@
+version: "3.0"
+
+entities:
+  # Can use a lookup table for productivity_unit_type (if necessary, which it most likely will be)
+  - productivity_unit_type
+  - timer_duration
+  - reminder_name
+  - reminder_datetime
+  # - list_name:
+  #   groups:
+  #   - 1
+  #   - 2
+  # - list_item:
+  #   groups:
+  #   - 1
+  #   - 2

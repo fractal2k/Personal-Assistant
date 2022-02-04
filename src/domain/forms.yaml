@@ -1,0 +1,11 @@
+version: "3.0"
+
+forms:
+  timer_form:
+    required_slots:
+      - timer_duration
+
+  reminder_form:
+    required_slots:
+      - reminder_name
+      - reminder_datetime

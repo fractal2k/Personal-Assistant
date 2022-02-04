@@ -1,0 +1,30 @@
+version: "3.0"
+
+slots:
+  name:
+    type: text
+    influence_conversation: false
+    mappings: 
+    - type: custom
+  # dob:
+  productivity_unit_type:
+    type: text
+    influence_conversation: true
+    mappings:
+    - type: from_entity
+      entity: productivity_unit_type
+  timer_duration:
+    type: any
+    mappings:
+    - type: from_entity
+      entity: timer_duration
+  reminder_name:
+    type: text
+    mappings:
+    - type: from_entity
+      entity: reminder_name
+  reminder_datetime:
+    type: any
+    mappings:
+    - type: from_entity
+      entity: reminder_datetime

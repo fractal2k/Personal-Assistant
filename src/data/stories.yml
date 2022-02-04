@@ -1,0 +1,78 @@
+version: "3.0"
+
+stories:
+
+- story: Timer happy path 1
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: productivity_unit
+    entities:
+    - productivity_unit_type: "timer"
+  - action: timer_form
+  - active_loop: timer_form
+  - action: action_create_productivity_unit
+  - intent: thank
+  - action: utter_noproblem
+
+- story: Reminder happy path 1
+  steps:
+  - intent: productivity_unit
+    entities:
+    - productivity_unit_type: "reminder"
+  - action: reminder_form
+  - active_loop: reminder_form
+  - action: action_create_productivity_unit
+  - intent:  goodbye
+  - action: utter_goodbye
+
+- story: timer interactive_story_1
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: productivity_unit
+    entities:
+    - productivity_unit_type: timer
+    - timer_duration: 2 hours
+  - slot_was_set:
+    - productivity_unit_type: timer
+  - slot_was_set:
+    - timer_duration: 2 hours
+  - action: timer_form
+  - active_loop: timer_form
+  - slot_was_set:
+    - requested_slot: null
+  - active_loop: null
+  - action: action_create_productivity_unit
+  - slot_was_set:
+    - timer_duration: null
+  - slot_was_set:
+    - productivity_unit_type: null
+  - intent: thank
+  - action: utter_noproblem
+  - intent: goodbye
+  - action: utter_goodbye
+
+- story: interactive_story_1
+  steps:
+  - intent: productivity_unit
+    entities:
+    - productivity_unit_type: timer
+  - slot_was_set:
+    - productivity_unit_type: timer
+  - action: timer_form
+  - active_loop: timer_form
+  - slot_was_set:
+    - requested_slot: timer_duration
+  - slot_was_set:
+    - timer_duration: 10 minutes
+  - slot_was_set:
+    - requested_slot: null
+  - active_loop: null
+  - action: action_create_productivity_unit
+  - slot_was_set:
+    - timer_duration: null
+  - slot_was_set:
+    - productivity_unit_type: null
+  - intent: thank
+  - action: utter_noproblem
