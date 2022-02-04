@@ -1,13 +1,13 @@
 version: '3'
 services:
   rasa-core:
-    image: pa-bot:1.0
+    image: fractal2k/personal-assistant:1.0
     ports:
       - 8080:5005
     depends_on:
       - rasa-actions
 
   rasa-actions:
-    image: pa-actions:1.0
+    image: fractal2k/personal-assistant-actions:0.0
     expose:
       - "5055"
